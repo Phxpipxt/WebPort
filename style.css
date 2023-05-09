@@ -150,6 +150,196 @@ nav ul li a:hover::after{
     display: block;
 }
 
+/* ------------------ Skill ------------------ */
+
+.sub-skill{
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.skill-list{
+    list-style: none;
+}
+
+.skill-head{
+    text-align: center;
+}
+
+.skill-head{
+    margin: 5px;
+}
+
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(232, 55, 55, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1));
+}
+
+/* ------------------ Programing Skill ------------------ */
+.html{
+    width: 60%;
+    animation: html 3s;
+}
+
+.css{
+    width: 40%;
+    animation: html 3s;
+}
+
+.js{
+    width: 25%;
+    animation: html 3s;
+}
+
+.python{
+    width: 30%;
+    animation: html 3s;
+}
+
+/* ------------------ Creative Skill ------------------ */
+
+.figma{
+    width: 70%;
+    animation: html 3s;
+}
+
+.pr{
+    width: 50%;
+    animation: html 3s;
+}
+
+.powerpoint{
+    width: 45%;
+    animation: html 3s;
+}
+
+/* ------------------ Language Skill ------------------ */
+
+.thai{
+    width: 100%;
+    animation: html 3s;
+}
+
+.eng{
+    width: 85%;
+    animation: html 3s;
+}
+
+/* ------------------ Programing keyframes ------------------ */
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 60;
+    }
+}
+
+@keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 40;
+    }
+}
+
+@keyframes js{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 25;
+    }
+}
+
+@keyframes python{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 30;
+    }
+}
+
+/* ------------------ Creative keyframes ------------------ */
+
+@keyframes figma{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 70;
+    }
+}
+
+@keyframes pr{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 50;
+    }
+}
+
+@keyframes powerpoint{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 45;
+    }
+}
+
+/* ------------------ Language keyframes ------------------ */
+
+@keyframes thai{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 100;
+    }
+}
+
+@keyframes eng{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 85;
+    }
+}
+
+
 /* ------------------ Portfolio ------------------ */
 
 #portfolio{
@@ -184,8 +374,8 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
-    font-size: 14px;
+    padding: 0 17px;
+    font-size: 12px;
     transition: height 0.5s;
 }
 .layer h3{
@@ -209,41 +399,40 @@ nav ul li a:hover::after{
 .work:hover .layer{
    height: 100%;     
 }
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #ff004f;
-}
 
-/* ------------------ Certifications ------------------ */
-#certs{
-    padding: 50px 0;
-}
-.cert-list{
+
+
+/* ------------------ Certifications & Projects ------------------ */
+.cert-list, .pro-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.cert{
+.cert, .pro{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.cert img{
+.cert img, .pro img{
     width: 100%;
     border-radius: 10px;
     display: block;
+    height: 300px;
+    object-fit: cover;  
 }
+
+
+.cert:hover img{
+    transform: scale(0.95);
+    cursor: url('..images/zoom-icon.png'), zoom-in;
+}
+
+.pro:hover  img{
+    transform: scale(0.95);
+    cursor: url('..images/zoom-icon.png'), zoom-in;
+}
+
 
 /* ------------------ Contact ------------------ */
 
