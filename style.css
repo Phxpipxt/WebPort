@@ -224,6 +224,11 @@ nav ul li a:hover::after{
     animation: html 3s;
 }
 
+.csharp{
+    width: 15%;
+    animation: html 3s;
+}
+
 /* ------------------ Creative Skill ------------------ */
 
 .figma{
@@ -232,7 +237,12 @@ nav ul li a:hover::after{
 }
 
 .pr{
-    width: 50%;
+    width: 55%;
+    animation: html 3s;
+}
+
+.ps{
+    width: 30%;
     animation: html 3s;
 }
 
@@ -290,6 +300,15 @@ nav ul li a:hover::after{
     }
 }
 
+@keyframes csharp{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 15;
+    }
+}
+
 /* ------------------ Creative keyframes ------------------ */
 
 @keyframes figma{
@@ -306,7 +325,16 @@ nav ul li a:hover::after{
         width:0%;
     }
     100%{
-        width: 50;
+        width: 55;
+    }
+}
+
+@keyframes ps{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 30;
     }
 }
 
