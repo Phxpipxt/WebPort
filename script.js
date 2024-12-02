@@ -60,3 +60,7 @@ form.addEventListener("submit", (e) => {
     modal.appendChild(imgZoom);
     document.body.appendChild(modal);
   };
+
+  
+
+

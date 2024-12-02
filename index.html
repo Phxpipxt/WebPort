@@ -22,7 +22,7 @@
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skill-bar">Skills</a></li>
                     <li><a href="#pros">Projects</a></li>
-                    <li><a href="#portfolio">Experience</a></li>
+                    <!-- <li><a href="#portfolio">Experience</a></li> -->
                     <li><a href="#certs">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-xmark" onclick="closemenu()"></i>
@@ -31,7 +31,7 @@
             </nav>
             <div class="header-text">
                 <h1>Hi, I'm <span>Phupipat</span><br> From Bangkok University </h1>
-                <p style="color: ç;">Web Developer & Designer</p>
+                <p id="typing-text" class="typing-animation">Web Developer</p>
             </div>
         </div>
     </div>
@@ -46,14 +46,13 @@
                 
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>My name is Phupipat Jimjuan. You can call me Owen. I am a dedicated Computer Science student at Bangkok University with a strong passion for technology and a keen interest in pursuing a career in the field of Information Technology (IT). 
-                        My goal is to secure a position as a Developer or any IT-related role upon graduation.
-                        <br><br>
-                        My aspiration is to secure a challenging role as a Developer or in any IT-related position upon graduation. <br>I am driven by a deep passion for technology, and my coursework, internships, and personal projects have equipped me with valuable skills in programming languages such as Javascript, Typescript, HTML, CSS and MySQL, as well as hands-on experience with cutting-edge tools</p>
+                    <p>Hello, I’m Phupipat Jimjuan, but you can call me Owen. I am a Computer Science student at Bangkok University with a strong passion for technology and innovation. My primary career goal is to contribute to the field of Information Technology as a Developer or in any IT-related role that allows me to solve complex problems and create meaningful solutions.
+
+                        I am deeply motivated by the ever-evolving nature of technology and have honed my skills through coursework, internships, and personal projects. I have proficiency in programming languages such as JavaScript, TypeScript, HTML, CSS, and MySQL, along with hands-on experience using modern tools and technologies. I am eager to bring my knowledge, creativity, and dedication to a dynamic team, where I can grow professionally while delivering impactful results.</p>
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
-                        <p class="tab-links" onclick="opentab('softskill')">Soft Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('softskill')">Soft Skills</p> -->
                     </div>
 
                     <!-- Education -->
@@ -164,8 +163,8 @@
                     <!-- Soft Skill -->
                     <div class="tab-contents" id="softskill">
                         <ul>
-                            <li>Teamwork and Collaboration</li>
-                            <li>Flexibility and Adaptability</li>
+                            <li><i class="fa-solid fa-screwdriver-wrench"> Teamwork and Collaboration</i></li>
+                            <li><i class="fa-solid fa-screwdriver-wrench"> Flexibility and Adaptability</i></li>
                         </ul>
                     </div>
                     
@@ -174,93 +173,117 @@
         </div>
     </div>
 
-        <!-------------------- Skill -------------------->
-        <div id="skill-bar" class="skill" >
-            <h1 class="sub-skill">My Skills</h1>
+        <!-------------------- Skill Section -------------------->
+<div id="skills" class="skills-container">
+    <h1 class="section-title">My Skills</h1>
     
-            <h2>Programming</h2>
-            <li class="skill-list"><h3 class="skill-head">HTML <p class="level">[Intermediate]</p></h3>
-                <span class="bar"><span class="html"></span></span>
+    <!-- Programming Section -->
+    <div class="skills-category">
+        <h2>Programming</h2>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-name">HTML</span>
+                <span class="skill-level">Intermediate</span>
             </li>
+            <li>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Beginner</span>
+            </li>
+            <li>
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">Beginner</span>
+            </li>
+            <li>
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Beginner</span>
+            </li>
+            <li>
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Beginner</span>
+            </li>
+            <li>
+                <span class="skill-name">CSS</span>
+                <span class="skill-level">Beginner</span>
+            </li>
+            <li>
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Beginner</span>
+            </li>
+        </ul>
+    </div>
 
-            <li class="skill-list"><h3 class="skill-head">JavaScript <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="js"></span></span>
+    <!-- Framework Section -->
+    <div class="skills-category">
+        <h2>Framework</h2>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-name">Angular</span>
+                <span class="skill-level">Beginner</span>
             </li>
-    
-            <li class="skill-list"><h3 class="skill-head">CSS <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="css"></span></span>
+            <li>
+                <span class="skill-name">React</span>
+                <span class="skill-level">Beginner</span>
             </li>
+        </ul>
+    </div>
 
-            <li class="skill-list"><h3 class="skill-head">Java <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="java"></span></span>
+    <!-- OS Section -->
+    <div class="skills-category">
+        <h2>Operating System (OS)</h2>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-name">Windows</span>
+                <span class="skill-level">Advanced</span>
             </li>
-
-            <li class="skill-list"><h3 class="skill-head">Python <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="python"></span></span>
+            <li>
+                <span class="skill-name">macOS</span>
+                <span class="skill-level">Advanced</span>
             </li>
+        </ul>
+    </div>
 
-            <li class="skill-list"><h3 class="skill-head">SQL <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="sql"></span></span>
+    <!-- Creative Section -->
+    <div class="skills-category">
+        <h2>Creative</h2>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-name">PowerPoint</span>
+                <span class="skill-level">Intermediate</span>
             </li>
-
-            <h2>Framework</h2>
-
-            <li class="skill-list"><h3 class="skill-head">TypeScript <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="ts"></span></span>
+            <li>
+                <span class="skill-name">Figma</span>
+                <span class="skill-level">Beginner</span>
             </li>
-
-            <li class="skill-list"><h3 class="skill-head">Angular <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="ang"></span></span>
+            <li>
+                <span class="skill-name">Premiere Pro</span>
+                <span class="skill-level">Beginner</span>
             </li>
-
-            <h2>Operating System (OS)</h2>
-
-            <li class="skill-list"><h3 class="skill-head">Windows <p class="level">[Advance]</p></h3>
-                <span class="bar"><span class="windows"></span></span>
+            <li>
+                <span class="skill-name">Photoshop</span>
+                <span class="skill-level">Beginner</span>
             </li>
+        </ul>
+    </div>
 
-            <li class="skill-list"><h3 class="skill-head">macOS  <p class="level">[Advance]</p></h3>
-                <span class="bar"><span class="macos"></span></span>
+    <!-- Languages Section -->
+    <div class="skills-category">
+        <h2>Languages</h2>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-name">Thai</span>
+                <span class="skill-level">Native</span>
             </li>
-    
-
-            <h2>Creative</h2>
-
-            <li class="skill-list"><h3 class="skill-head">Power Point <p class="level">[Intermediate]</p></h3>
-                <span class="bar"><span class="powerpoint"></span></span>
-            </li> 
-
-            <li class="skill-list"><h3 class="skill-head">Figma <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="figma"></span></span>
+            <li>
+                <span class="skill-name">English</span>
+                <span class="skill-level">Good</span>
             </li>
-            
-            <li class="skill-list"><h3 class="skill-head">Adobe Premiere Pro <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="pr"></span></span>
-            </li>
-
-            <li class="skill-list"><h3 class="skill-head">Adobe Photoshop <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="ps"></span></span>
-            </li>
-    
-            <h2>Languages</h2>
-    
-            <li class="skill-list"><h3 class="skill-head">Thai <p class="level">[Native]</p></h3>
-                <span class="bar"><span class="thai"></span></span>
-            </li>
-    
-            <li class="skill-list"><h3 class="skill-head">English <p class="level">[Good]</p></h3>
-                <span class="bar"><span class="eng"></span></span>
-            </li>
-
-            <li class="skill-list"><h3 class="skill-head">Chinese <p class="level">[Beginner]</p></h3>
-                <span class="bar"><span class="cn"></span></span>
-            </li>
-    
-        </div>
+        </ul>
+    </div>
+</div>
 
     <!-------------------- Experiencs -------------------->
 
-    <div id="portfolio">
+    <!-- <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">Experiences</h1>
             <div class="work-list">
@@ -278,7 +301,6 @@
                             <li>Pre-verify the products prior to the customer<br> delivery</li>
                             <li> Clear up the exhibition booth after exhibition ends</li>
                         </ul>
-                        <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
                     </div>
                 </div>
                 <div class="work">
@@ -295,7 +317,7 @@
                             <li>Pre-verify the products prior to the customer <br>delivery</li>
                             <li> Clear up the exhibition booth after exhibition ends</li>
                         </ul>
-                        <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
+
                     </div>
                 </div>
                 <div class="work">
@@ -312,7 +334,6 @@
                             <li>Pre-verify the products prior to the customer <br>delivery</li>
                             <li> Clear up the exhibition booth after exhibition ends</li>
                         </ul>
-                        <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
                     </div>
                 </div>
                 <div class="work">
@@ -329,7 +350,7 @@
                             <li>Pre-verify the products prior to the customer <br>delivery</li>
                             <li> Clear up the exhibition booth after exhibition ends</li>
                         </ul>
-                        <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
+
                     </div>
                 </div>
                 <div class="work">
@@ -344,7 +365,6 @@
                             <li>UAT Web Application</li>
                             <li>Move Framework form JQwidget to DevExtreme</li>  
                         </ul>
-                        <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
                     </div>
                 </div>
                 <div class="work">
@@ -390,9 +410,8 @@
                     </div>
                 </div>
             </div>
-            <!-- <a href="#" class="btn">See more</a> -->
         </div>
-    </div>
+    </div> -->
     
 
     <!-------------------- Project -------------------->
@@ -405,7 +424,7 @@
                     <img src="images/project2.png" onclick="zoomImage(this)">
                     <div class="pro-layer">
                         <h3>Calorie Calculator Application</h3>
-                        <p>Figma | UX/UI Design </p>
+                        <!-- <p>Figma | UX/UI Design </p> -->
                     </div>
                 </div>
 
@@ -413,7 +432,7 @@
                     <img src="images/project1.png" onclick="zoomImage(this)">
                     <div class="pro-layer">
                         <h3>BMI Calulator Application</h3>
-                        <p>Figma | UX/UI Design</p>
+                        <!-- <p>Figma | UX/UI Design</p> -->
                     </div>
                 </div>
 
@@ -421,7 +440,7 @@
                     <img src="images/project3.png" onclick="zoomImage(this)">
                     <div class="pro-layer">
                         <h3>Food Delivery Application</h3>
-                        <p>Figma | UX/UI Design</p>
+                        <!-- <p>Figma | UX/UI Design</p> -->
                     </div>
                 </div>
 
@@ -429,7 +448,7 @@
                     <img src="images/project4.png" onclick="zoomImage(this)">
                     <div class="pro-layer">
                         <h3>VGA For Rent Application</h3>
-                        <p>Figma | UX/UI Design</p>
+                        <!-- <p>Figma | UX/UI Design</p> -->
                     </div>
                 </div>
 
@@ -437,7 +456,7 @@
                     <img src="images/project5.png" onclick="zoomImage(this)">
                     <div class="pro-layer">
                         <h3>Dinotoy Application</h3>
-                        <p>C# | UX/UI Design</p>
+                        <!-- <p>C# | UX/UI Design</p> -->
                     </div>
                 </div>
 
@@ -445,12 +464,11 @@
                     <img src="images/project6.png" onclick="zoomImage(this)">
                     <div class="pro-layer">
                         <h3>Line Liff x Google Form</h3>
-                        <p>HTML, JavaScript, CSS | Web Design</p>
+                        <!-- <p>HTML, JavaScript, CSS | Web Design</p> -->
                     </div>
                 </div>
                 
             </div>
-            <!-- <a href="#" class="btn">See more</a> -->
         </div>
     </div>
     
@@ -534,7 +552,6 @@
             </div>
         </div>
 
-
         <!-- Copyright  -->
 
 <!-- FIXME -->
@@ -542,8 +559,6 @@
             <p>Copyright 2024 &copy; by Phupipat Jimjuan</p>
         </div>
     </div>
-
-    
 
 </body>
 
